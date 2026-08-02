@@ -83,9 +83,7 @@ print("Final Performance:", performance)
 
 <h1>RESULT</h1>
 
-```
 
-We got the output Successful for the given question
+<p>We got the output Successful for the given question<\p>
 
-```
 
