@@ -40,8 +40,11 @@
 <p>Treat unhealthy patients in each room. And check for the unhealthy patients in random room</p>
 <h3>STEP 5:</h3>
 <p>Measure the performance parameters: For each treatment performance incremented, for each movement performance decremented</p>
+
 <h1>PROGRAM</h1>
+
 ```
+
 import random
 performance = 0
 rooms = {
@@ -71,4 +74,5 @@ for room in rooms:
         print("No medicine required")
 print("\n------------------------------")
 print("Final Performance:", performance)
+
 ```
