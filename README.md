@@ -40,3 +40,35 @@
 <p>Treat unhealthy patients in each room. And check for the unhealthy patients in random room</p>
 <h3>STEP 5:</h3>
 <p>Measure the performance parameters: For each treatment performance incremented, for each movement performance decremented</p>
+<h1>PROGRAM</h1>
+```
+import random
+performance = 0
+rooms = {
+    1: {"temperature": random.randint(97, 102), "treated": False},
+    2: {"temperature": random.randint(97, 102), "treated": False}
+}
+current_room = 1
+print("Medicine Prescribing AI Agent")
+print("------------------------------")
+for room in rooms:
+    if room != current_room:
+        print("\nAgent moves from Room", current_room, "to Room", room)
+        performance -= 1
+        current_room = room
+
+    temperature = rooms[room]["temperature"]
+
+    print("Room", room)
+    print("Patient Temperature:", temperature, "°F")
+    if temperature > 98.5:
+        print("Patient is unhealthy (fever detected)")
+        print("Medicine prescribed and treatment given")
+        rooms[room]["treated"] = True
+        performance += 1
+    else:
+        print("Patient is healthy")
+        print("No medicine required")
+print("\n------------------------------")
+print("Final Performance:", performance)
+```
