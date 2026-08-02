@@ -76,3 +76,12 @@ print("\n------------------------------")
 print("Final Performance:", performance)
 
 ```
+
+<h1>OUTPUT</h1>
+
+```
+
+<img width="1017" height="401" alt="image" src="https://github.com/user-attachments/assets/c2f8d0d3-ac84-4ff2-8954-3839ffd7e126" />
+
+```
+
